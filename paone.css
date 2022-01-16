@@ -19,13 +19,14 @@ h2 {
 
 img {
   border-radius: 8px;
-  margin-left: auto;
+    height: 250px ;
+  margin-left: 180px;
   margin-right: auto;
 }
 
 .box {
   background-color: white;
-  color: black;
+  color: white;
   border-radius: 8px;
   padding: 10px;
     font-size: 150%; 
