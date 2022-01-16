@@ -21,6 +21,26 @@ img {
   border-radius: 8px;
 }
 
+.side {
+    grid-area: sidebar;
+  }
+
+.side {
+    grid-area: sidebar2;
+  }
+
+.in {
+    grid-area: content;
+  }
+
+.up {
+    grid-area: header;
+  }
+
+.down {
+    grid-area: footer;
+  }
+
 // AB
 .ab {
     display: flex;
