@@ -38,6 +38,43 @@ img {
 .up {grid-area: header;}
 .down {grid-area: footer; }
 
+.grid {background-color: color;
+    color: white;}
+
+  .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "up"
+     "side"
+     "content"
+     "side2"
+     "down"
+  }
+
+  @media only screen and (min-width: 500px)  {
+  .grid {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "up    up"
+    "side  content"
+    "side2 side2"
+    "down  down";
+  }
+  }
+
+  @media only screen and (min-width: 600px)   {
+    .grid {
+      grid-gap: 20px;
+      grid-template-columns: 120px auto 120px;
+      grid-template-areas:
+      "up      up      up"
+      "side content side2"
+      "down   down   down";
+      max-width: 600px;
+    }
+  }
+
 // AB
 .ab {
     display: flex;
