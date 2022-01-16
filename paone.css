@@ -9,7 +9,10 @@ h2 {
 }
 
 #intro {
+    margin-top: 100px;
     margin-bottom: 25px;
+    margin-right: 150px;
+    margin-left: 80px;
     text-indent: 2cm;
     text-align: justify;
 }
@@ -56,6 +59,7 @@ th, td {
 }
 
 th {
+    margin-top: 100px;
     font-weight: 1000;
     background-color: white;
 }
