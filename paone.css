@@ -2,3 +2,43 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
+//Table
+table {
+    width: 50%;
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 16px;
+    color: #000000;
+}
+
+th {
+    font-weight: 800;
+    background-color: rgb(125,77,255);
+}
+
+td {
+    font-weight: normal;
+}
+
+td:nth-child(1) {
+    font-weight: bold;
+}
+
+tr {
+    background-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #d6caf7 !important;
+}
+
