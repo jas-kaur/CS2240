@@ -21,6 +21,11 @@ img {
   border-radius: 8px;
 }
 
+img2 {
+    height: 250px ;
+    width: 60%;
+  margin-left: 180px;}
+
 .box {
   background-color: white;
   color: white;
