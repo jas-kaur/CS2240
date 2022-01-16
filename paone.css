@@ -1,6 +1,14 @@
 
 .mySlides {display: none}
 
+h2 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+
 // AB
 .ab {
     display: flex;
