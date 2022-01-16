@@ -1,8 +1,14 @@
 
-body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
-//Table
+// BODY
+body {
+    background-image: url("PA1Assets/Background.png");
+    background-color: #3a4846;
+    font-family: "Lato", sans-serif;
+}
+
+// TABLE
 table {
     width: 50%;
     min-width: 250px;
@@ -10,7 +16,7 @@ table {
 }
 
 th, td {
-    border: 5px solid white;
+    border: 5px solid black;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -23,7 +29,7 @@ th, td {
 
 th {
     font-weight: 800;
-    background-color: rgb(125,77,255);
+    background-color: rgb(6,75,94);
 }
 
 td {
@@ -39,6 +45,6 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: #d6caf7 !important;
+    background-color: #4a92c2;
 }
 
