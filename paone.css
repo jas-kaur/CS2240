@@ -32,7 +32,7 @@ table {
 }
 
 th, td {
-    border: 5px solid white;
+    border: 2.5px solid white;
     padding: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -60,6 +60,6 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(6,75,94);
+    background-color: rgb(73, 146, 166);
 }
 
