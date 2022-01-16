@@ -23,25 +23,19 @@ img {
   margin-right: auto;
 }
 
-.side {
-    grid-area: sidebar;
-  }
+.box {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+    font-size: 150%; 
+}
 
-.side {
-    grid-area: sidebar2;
-  }
-
-.in {
-    grid-area: content;
-  }
-
-.up {
-    grid-area: header;
-  }
-
-.down {
-    grid-area: footer;
-  }
+.side {grid-area: sidebar;}
+.side {grid-area: sidebar2;}
+.in {grid-area: content;}
+.up {grid-area: header;}
+.down {grid-area: footer; }
 
 // AB
 .ab {
