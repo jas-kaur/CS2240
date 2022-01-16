@@ -27,7 +27,7 @@ table {
 }
 
 th, td {
-    border: 0.5rem;
+    border: 0.5rem white;
     padding: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
