@@ -27,8 +27,7 @@ table {
 }
 
 th, td {
-    border: 5px solid black;
-    border-radius: 10px;
+    border: 5px solid white;
     padding: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -40,7 +39,7 @@ th, td {
 
 th {
     font-weight: 800;
-    background-color: rgb(6,75,94);
+    background-color: #4a92c2;
 }
 
 td {
@@ -56,6 +55,6 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: #4a92c2;
+    background-color: rgb(6,75,94);
 }
 
