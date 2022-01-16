@@ -34,13 +34,13 @@ img2 {
     font-size: 150%; 
 }
 
-.side {grid-area: sidebar;}
-.side {grid-area: sidebar2;}
+.side {grid-area: side;}
+.side {grid-area: side2;}
 .in {grid-area: content;}
-.up {grid-area: header;}
-.down {grid-area: footer; }
+.up {grid-area: up;}
+.down {grid-area: down; }
 
-.grid {background-color: color;
+.grid {background-color: blue;
     color: white;}
 
   .grid {
@@ -76,6 +76,16 @@ img2 {
       max-width: 600px;
     }
   }
+
+.header,
+.footer {
+  background-color: black;
+}
+
+.sidebar2 {
+  background-color: white;
+  color: blue;
+}
 
 .container {
   text-align: center;
