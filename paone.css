@@ -37,10 +37,12 @@ img {
   border-radius: 8px;
 }
 
+/*
 img2 {
     height: 250px ;
     width: 60%;
   margin-left: 180px;}
+*/
 
 iframe {
     display: block;
@@ -50,6 +52,7 @@ iframe {
     border: none;
 }
 
+/* GRID */
 .box {
   background-color: white;
   color: black;
@@ -116,18 +119,8 @@ iframe {
   padding: 10px 20px;
 }
 
-// AB
-.ab {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
 
-// BODY
+/* BODY */
 body {
     background-color: #eda27c;
     font-family: "Lato", sans-serif;
@@ -138,7 +131,17 @@ body {
   margin-right: auto;
 }
 
-// TABLE
+.ab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* TABLE */
 table {
     width: 50%;
     min-width: 250px;
