@@ -27,6 +27,7 @@ h2 {
 }
 
 #head {
+    font-weight: bold;
     margin-top: 25px;
     margin-right: 150px;
     margin-left: 80px;
