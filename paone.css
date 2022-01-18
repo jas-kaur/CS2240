@@ -28,8 +28,8 @@ img2 {
 
 iframe {
     display: block;
-    margin: 100px auto 20px auto;
-    width: 100%;
+    margin: 0 auto 20px auto;
+    width: 500px;
     height: 300px;
     border: none;
 }
