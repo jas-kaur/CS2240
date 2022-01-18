@@ -13,7 +13,23 @@ h2 {
     margin-bottom: 25px;
     margin-right: 150px;
     margin-left: 80px;
-    text-indent: 2cm;
+    text-indent: 1cm;
+    text-align: justify;
+}
+
+#intro2 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-right: 150px;
+    margin-left: 80px;
+    text-indent: 1cm;
+    text-align: justify;
+}
+
+#head {
+    margin-top: 25px;
+    margin-right: 150px;
+    margin-left: 80px;
     text-align: justify;
 }
 
@@ -39,7 +55,7 @@ iframe {
   color: black;
   border-radius: 8px;
   padding: 10px;
-    font-size: 150%; 
+  font-size: 150%; 
 }
 
 .side {grid-area: side;}
