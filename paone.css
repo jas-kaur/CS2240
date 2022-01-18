@@ -121,10 +121,6 @@ iframe {
 
 
 /* BODY */
-body {
-    background-color: #eda27c;
-    font-family: "Lato", sans-serif;
-}
 
 .center {
   margin-left: auto;
@@ -139,6 +135,11 @@ body {
     height: fit-content;
     justify-content: space-between;
     margin-bottom: 25px;
+}
+
+body {
+    background-color: #eda27c;
+    font-family: "Lato", sans-serif;
 }
 
 /* TABLE */
