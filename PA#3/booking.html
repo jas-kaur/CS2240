@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Burger King - Food Website Template</title>
+        <title>PA #3</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -23,32 +23,59 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+
+            .autocomplete {
+                /*the container must be positioned relative:*/
+                position: relative;
+                display: inline-block;
+              }
+    
+            .autocomplete-items {
+                position: absolute;
+                border: 1px solid #d4d4d4;
+                border-bottom: none;
+                border-top: none;
+                z-index: 99;
+                /*position the autocomplete items to be the same width as the container:*/
+                top: 100%;
+                left: 0;
+                right: 0;
+              }
+              .autocomplete-items div {
+                padding: 10px;
+                cursor: pointer;
+                background-color: #fff;
+                border-bottom: 1px solid #d4d4d4;
+              }
+              .autocomplete-items div:hover {
+                /*when hovering an item:*/
+                background-color: #e9e9e9;
+              }
+              .autocomplete-active {
+                /*when navigating through the items using the arrow keys:*/
+                background-color: DodgerBlue !important;
+                color: #ffffff;
+              }
+    
+            </style>
     </head>
 
     <body>
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
+         <!-- Nav Bar Start -->
+         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Burger <span>King</span></a>
+                <a href="PA3.html" class="navbar-brand">Tasty <span>Bites</span></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="..//index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="feature.html" class="nav-item nav-link">Feature</a>
-                        <a href="team.html" class="nav-item nav-link">Chef</a>
                         <a href="menu.html" class="nav-item nav-link">Menu</a>
                         <a href="booking.html" class="nav-item nav-link active">Booking</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                            </div>
-                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -78,23 +105,16 @@
         <div class="booking">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="booking-content">
                             <div class="section-header">
                                 <p>Book A Table</p>
+                                
                                 <h2>Book Your Table For Private Dinners & Happy Hours</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-6">
                         <div class="booking-form">
                             <form>
                                 <div class="control-group">
@@ -140,7 +160,7 @@
                                 <div class="control-group">
                                     <div class="input-group">
                                         <select class="custom-select form-control">
-                                            <option selected>Guest</option>
+                                            <option selected>No. of Guest</option>
                                             <option value="1">1 Guest</option>
                                             <option value="2">2 Guest</option>
                                             <option value="3">3 Guest</option>
@@ -167,241 +187,87 @@
             </div>
         </div>
         <!-- Booking End -->
-        
-        
-        <!-- Menu Start -->
-        <div class="menu">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Food Menu</p>
-                    <h2>Delicious Food Menu</h2>
-                </div>
-                <div class="menu-tab">
-                    <ul class="nav nav-pills justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#burgers">Burgers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#snacks">Snacks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#beverages">Beverages</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="burgers" class="container tab-pane active">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Mini cheese Burger</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Double size burger</span> <strong>$11.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bacon, EGG and Cheese</span> <strong>$13.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Pulled porx Burger</span> <strong>$18.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Fried chicken Burger</span> <strong>$22.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-burger-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="snacks" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Corn Tikki - Spicy fried Aloo</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bread besan Toast</span> <strong>$35.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Healthy soya nugget snacks</span> <strong>$20.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Tandoori Soya Chunks</span> <strong>$30.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-snack-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="beverages" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Single Cup Brew</span> <strong>$7.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caffe Americano</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caramel Macchiato</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$8.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$12.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-beverage-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Table filter autocomplete-->
+        <div class="container">
+            <h2>Our branches across the World</h2>
+            <p>Search for the country or city:</p> 
+            <div class="autocomplete">
+            <input class="form-control" id="myInput"  name="myCountry" type="text" placeholder="Search..">
         </div>
-        <!-- Menu End -->
+            <br><br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Country</th>
+                  <th>City</th>
+                  <th>Contact</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>Philippines</td>
+                  <td>Cebu</td>
+                  <td>222 2222</td>
+                </tr>
+                <tr>
+                  <td>Philippines</td>
+                  <td>Manila</td>
+                  <td>222 2222</td>
+                </tr>
+                <tr>
+                  <td>Philippines</td>
+                  <td>Davao</td>
+                  <td>222 2222</td>
+                </tr>
+                <tr>
+                  <td>India</td>
+                  <td>Delhi</td>
+                  <td>222 2222</td>
+                </tr>
+                <tr>
+                    <td>Korea</td>
+                    <td>Seoul</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Korea</td>
+                    <td>Busan</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Japan</td>
+                    <td>Tokyo</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Japan</td>
+                    <td>Osaka</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Canada</td>
+                    <td>Toronto</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Canada</td>
+                    <td>Burmingham</td>
+                    <td>222 2222</td>
+                  </tr>
+                  <tr>
+                    <td>Canada</td>
+                    <td>Vancouver</td>
+                    <td>222 2222</td>
+                  </tr>
+              </tbody>
+            </table>
 
 
         <!-- Footer Start -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="footer-contact">
-                                    <h2>Our Address</h2>
-                                    <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                    <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                    <div class="footer-social">
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a href=""><i class="fab fa-youtube"></i></a>
-                                        <a href=""><i class="fab fa-instagram"></i></a>
-                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="footer-link">
-                                    <h2>Quick Links</h2>
-                                    <a href="">Terms of use</a>
-                                    <a href="">Privacy policy</a>
-                                    <a href="">Cookies</a>
-                                    <a href="">Help</a>
-                                    <a href="">FQAs</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="footer-newsletter">
-                            <h2>Newsletter</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.
-                            </p>
-                            <div class="form">
-                                <input class="form-control" placeholder="Email goes here">
-                                <button class="btn custom-btn">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>Copyright &copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
-                    <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
+        <div class="footer conatiner text-center">
+            <p>CS 2240 - Performance Assessment #3.</p>
+            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
         </div>
         <!-- Footer End -->
 
@@ -422,5 +288,133 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+
+            function autocomplete(inp, arr) {
+                /*the autocomplete function takes two arguments,
+                the text field element and an array of possible autocompleted values:*/
+                var currentFocus;
+                /*execute a function when someone writes in the text field:*/
+                inp.addEventListener("input", function(e) {
+                    var a, b, i, val = this.value;
+                    /*close any already open lists of autocompleted values*/
+                    closeAllLists();
+                    if (!val) { return false;}
+                    currentFocus = -1;
+                    /*create a DIV element that will contain the items (values):*/
+                    a = document.createElement("DIV");
+                    a.setAttribute("id", this.id + "autocomplete-list");
+                    a.setAttribute("class", "autocomplete-items");
+                    /*append the DIV element as a child of the autocomplete container:*/
+                    this.parentNode.appendChild(a);
+                    /*for each item in the array...*/
+                    for (i = 0; i < arr.length; i++) {
+                        /*check if the item starts with the same letters as the text field value:*/
+                        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                        /*create a DIV element for each matching element:*/
+                        b = document.createElement("DIV");
+                        /*make the matching letters bold:*/
+                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML += arr[i].substr(val.length);
+                        /*insert a input field that will hold the current array item's value:*/
+                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                        /*execute a function when someone clicks on the item value (DIV element):*/
+                            b.addEventListener("click", function(e) {
+                            /*insert the value for the autocomplete text field:*/
+                            inp.value = this.getElementsByTagName("input")[0].value;
+                            /*close the list of autocompleted values,
+                            (or any other open lists of autocompleted values:*/
+                            closeAllLists();
+                        });
+                        a.appendChild(b);
+                        }
+                    }
+            });
+                /*execute a function presses a key on the keyboard:*/
+                inp.addEventListener("keydown", function(e) {
+                    var x = document.getElementById(this.id + "autocomplete-list");
+                    if (x) x = x.getElementsByTagName("div");
+                    if (e.keyCode == 40) {
+                        /*If the arrow DOWN key is pressed,
+                        increase the currentFocus variable:*/
+                        currentFocus++;
+                        /*and and make the current item more visible:*/
+                        addActive(x);
+                    } else if (e.keyCode == 38) { //up
+                        /*If the arrow UP key is pressed,
+                        decrease the currentFocus variable:*/
+                        currentFocus--;
+                        /*and and make the current item more visible:*/
+                        addActive(x);
+                    } else if (e.keyCode == 13) {
+                        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                        e.preventDefault();
+                        if (currentFocus > -1) {
+                        /*and simulate a click on the "active" item:*/
+                        if (x) x[currentFocus].click();
+                        }
+                    }
+                });
+
+                function addActive(x) {
+                    /*a function to classify an item as "active":*/
+                    if (!x) return false;
+                    /*start by removing the "active" class on all items:*/
+                    removeActive(x);
+                    if (currentFocus >= x.length) currentFocus = 0;
+                    if (currentFocus < 0) currentFocus = (x.length - 1);
+                    /*add class "autocomplete-active":*/
+                    x[currentFocus].classList.add("autocomplete-active");
+                }
+                function removeActive(x) {
+                    /*a function to remove the "active" class from all autocomplete items:*/
+                    for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
+                    }
+                }
+                function closeAllLists(elmnt) {
+                    /*close all autocomplete lists in the document,
+                    except the one passed as an argument:*/
+                    var x = document.getElementsByClassName("autocomplete-items");
+                    for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+                }
+                /*execute a function when someone clicks in the document:*/
+                document.addEventListener("click", function (e) {
+                    closeAllLists(e.target);
+                });
+                }
+
+                var countries = [
+                                "Korea",
+                                "Japan",
+                                "Philippines",
+                                "India",
+                                "Canada",
+                                "Tokyo",
+                                "Osaka",
+                                "Seoul",
+                                "Busan",
+                                "Delhi",
+                                "Manila",
+                                "Davao",
+                                "Cebu",
+                            ];
+                            
+                autocomplete(document.getElementById("myInput"), countries);
+
+            </script>
     </body>
 </html>
