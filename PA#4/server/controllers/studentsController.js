@@ -89,7 +89,7 @@ exports.submit = (req, res) => {
                         title: "Add a student",
                         css: ["styles.css"],
                         js: ["script.js"],
-                        alert: "Student added to the system.",
+                        alert: "The student is added!",
                     });
                 } else console.log(err);
             }
