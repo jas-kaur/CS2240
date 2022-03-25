@@ -20,9 +20,9 @@ h2 {
 }
 
 :root {
-    --background: blue;
-    --secondary: red;
-    --primary: green;
+    --background: #050000;
+    --secondary: #284e6e;
+    --primary: #65969c;
 }
 
 .header {
