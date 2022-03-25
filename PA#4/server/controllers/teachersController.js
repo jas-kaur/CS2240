@@ -61,7 +61,7 @@ exports.find = (req, res) => {
 // ADD TEACHER FORM
 exports.add = (req, res) => {
     res.render("add_teacher", {
-        title: "Teachers: Add a Teacher",
+        title: "Add a Teacher",
         css: ["styles.css"],
         js: ["script.js"],
     });
@@ -86,10 +86,10 @@ exports.submit = (req, res) => {
 
                 if (!err) {
                     res.render("add_teacher", {
-                        title: "Teachers: Add a Teacher",
+                        title: "Add a Teacher",
                         css: ["styles.css"],
                         js: ["script.js"],
-                        alert: "Teacher added successfully!",
+                        alert: "The teacher is added!",
                     });
                 } else console.log(err);
             }
