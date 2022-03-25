@@ -89,7 +89,7 @@ exports.submit = (req, res) => {
                         title: "Add a subject",
                         css: ["styles.css"],
                         js: ["script.js"],
-                        alert: "Subject added to the system.",
+                        alert: "The subject is added!",
                     });
                 } else console.log(err);
             }
